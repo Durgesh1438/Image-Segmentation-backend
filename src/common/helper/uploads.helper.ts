@@ -2,7 +2,7 @@
 import * as fs from 'fs';
 import { promisify } from 'util';
 
-export const googleclientId='226507905282-noov74vi8s3fn38k31449vjvtmn17a74.apps.googleusercontent.com'
+export const googleclientId='846813517923-heolcnivb3oh6i5vc5f15kntk2nbpar3.apps.googleusercontent.com'
 
 export const checkIfFileOrDirectoryExists = (path: string): boolean => {
     return fs.existsSync(path);
