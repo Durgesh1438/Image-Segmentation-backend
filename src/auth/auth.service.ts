@@ -38,7 +38,8 @@ export class AuthService {
       isSubscriber: user.isSubscriber,
       endDate:user.endDate,
       freetrail:user.freetrail,
-      isAdmin:user.isAdmin
+      isAdmin:user.isAdmin,
+      subscriptionPlan:user.subscriptionPlan
     };
   }
 
@@ -94,7 +95,8 @@ export class AuthService {
             isSubscriber:user.isSubscriber,
             endDate:user.endDate,
             freetrail:user.freetrail,
-            isAdmin : user.isAdmin
+            isAdmin : user.isAdmin,
+            subscriptionPlan:user.subscriptionPlan
         };
     } catch (error) {
       console.error('Google sign-in error:', error);

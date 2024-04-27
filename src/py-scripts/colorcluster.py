@@ -38,7 +38,7 @@ def color_cluster(original_filename ,min_area_slider, max_area_slider, cluster_s
         labels = kmeans.labels_
         img_copy = img2.copy()
         for i, contour in enumerate(filtered_contours):
-            color = (0, 0, 255) if labels[i] == 0 else (0, 255, 0) if labels[i] == 1 else (255, 0, 0)
+            color = (0, 0, 255) if labels[i] == 0 else (0, 255, 0) if labels[i] == 1 else (255, 0, 0) if labels[i] == 2 else (255,255,0)
             cv2.drawContours(img_copy, [contour], -1, color, 2)
             M = cv2.moments(contour)
             if M["m00"] != 0:
